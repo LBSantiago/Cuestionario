@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>PRUEBA PROGRAMACION 4º SISTEMAS</title>
+<script>
+function resultado() {
+  var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, nota
+
+  if (document.getElementById('p11').checked==true) {p1=1}
+  else {p1=0}
+  if (document.getElementById('p21').checked==true) {p2=1}
+  else {p2=0}
+  if (document.getElementById('p32').checked==true) {p3=1}
+  else {p3=0}
+  if (document.getElementById('p43').checked==true) {p4=1}
+  else {p4=0}
+  if(document.getElementById('p51').checked==true) {p5=1}
+  else {p5=0}
+  if (document.getElementById('p62').checked==true) {p6=1}
+  else {p6=0}
+  if (document.getElementById('p71').checked==true) {p7=1}
+  else {p7=0}
+  if (document.getElementById('p83').checked==true) {p8=1}
+  else {p8=0}
+  if (document.getElementById('p91').checked==true) {p9=1}
+  else {p9=0}
+  if(document.getElementById('p102').checked==true) {p10=1}
+  else {p10=0}
+
+  nota = p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
+  alert(' Su calificacion es: ' + nota);
+  location.reload();
+}
+</script>
+</head>
+<body>
+<h2>PRUEBA PROGRAMACION 4º SISTEMAS</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>1) Defina Algoritmo: </p>
+<input type="radio" name="pregunta1" id="p11"> Conjunto ordenado de operaciones que permiten hacer un calculo </p>
+<input type="radio" name="pregunta1" id="p12"> Cuestión discutible que hay que resolver o a la que se busca una explicación </p>
+<input type="radio" name="pregunta1" id="p13"> Conjunto de reglas, principios y conocimientos acerca de una ciencia </p>
+
+<p>2) ¿De que forma se puede representar un algoritmo? </p>
+<input type="radio" name="pregunta2" id="p21"> Pseudocodigo </p>
+<input type="radio" name="pregunta2" id="p22"> Ensayo </p>
+<input type="radio" name="pregunta2" id="p23"> Objetivo general </p>
+
+<p>3) ¿Scratch es un? </p>
+<input type="radio" name="pregunta3" id="p31"> Sistema operativo </p>
+<input type="radio" name="pregunta3" id="p32"> Lenguaje de programacion </p>
+<input type="radio" name="pregunta3" id="p33"> Base de datos </p>
+
+<p>4) ¿En scratch podemos crear? </p>
+<input type="radio" name="pregunta4" id="p41"> Hardware </p>
+<input type="radio" name="pregunta4" id="p42"> Sistemas operativos </p>
+<input type="radio" name="pregunta4" id="p43"> Animaciones y juegos </p>
+
+<p>5) ¿Que permite una estructura de control? </p>
+<input type="radio" name="pregunta5" id="p51"> Modificar el flujo de ejecucion de las instrucciones de un programa </p>
+<input type="radio" name="pregunta5" id="p52"> Simplificar la comunicación y la información sobre un proceso o un sistema determinado </p>
+<input type="radio" name="pregunta5" id="p53"> Localizar y reconocer todos los dispositivos necesarios para cargar el sistema operativo </p>
+
+<p>6) Defina Iteracion: </p>
+<input type="radio" name="pregunta6" id="p64"> Establecer o planificar el programa de una serie de actividades </p>
+<input type="radio" name="pregunta6" id="p62"> Proceso de repetir partes de un programa </p>
+<input type="radio" name="pregunta6" id="p63"> Hacer que algo dependa de alguna condición </p>
+
+<p>7) ¿Que permite la iteracion controlada por condicion? </p>
+<input type="radio" name="pregunta7" id="p71"> Permite repetir partes de un programa hasta que se cumpla una determinada condicion </p>
+<input type="radio" name="pregunta7" id="p72"> Permite ingresar datos a un programa por teclado </p>
+<input type="radio" name="pregunta7" id="p73"> Contar el numero de veces que se repite un programa </p>
+
+<p>8) ¿que funcion nos permite la entrada de datos por teclado? </p>
+<input type="radio" name="pregunta8" id="p81"> JavaScript</p>
+<input type="radio" name="pregunta8" id="p82"> Scratch</p>
+<input type="radio" name="pregunta8" id="p83"> PROMPT </p>
+
+<p>9) En JavaScript que clase nos permite manejar fechas y horas: </p>
+<input type="radio" name="pregunta9" id="p91"> Clase DATE </p>
+<input type="radio" name="pregunta9" id="p92"> Clase YEAR </p>
+<input type="radio" name="pregunta9" id="p93"> Clase CHECK </p>
+
+<p>10) Las estructuras que nos permiten organizar elementos dentro de una conexion se denominan:</p>
+<input type="radio" name="pregunta10" id="p101"> Funciones </p>
+<input type="radio" name="pregunta10" id="p102"> Arreglos </p>
+<input type="radio" name="pregunta10" id="p103"> Clases</p>
+<hr>
+<p><input type="button" value=" TERMINAR " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
